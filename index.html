@@ -5,148 +5,157 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500,900&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="slider/fullpage.css">
 </head>
-<body id="body">
-	<div class="slider" id="slider">
-		<button class="up__btn btn" id="btn__up"><</button>
-		<button class="down__btn btn" id="btn__down">></button>
+<body>
+	<div class="sliding">
+		<div class="ball"></div>
 	</div>
-
-	<header>
-		<div class="switchs">
-			<button class="switch btn__swch" id="swch1">
-				<div class="tgl toogle1" id="tgl1"></div>
-			</button>
-			<button class="switch btn2__swch" id="swch2">
-				<div class="tgl toogle2" id="tgl2"></div>
-			</button>
-		</div>
-		<div class="back">
-			<div class="left__part">
-
-				<div class="title" id="title"></div>
-
-				<div class="under__title">
-					Talk to people artificial language
-				</div>
-
+	<div id="fullpage">
+		<header class="section">
+			<div class="switchs">
+				<button class="switch btn__swch" id="swch1">
+					<div class="tgl toogle1" id="tgl1"></div>
+				</button>
+				<button class="switch btn2__swch" id="swch2">
+					<div class="tgl toogle2" id="tgl2"></div>
+				</button>
 			</div>
+			<div class="back">
+				<div class="left__part">
 
-			<div class="right__part">
-				<div class="register">
-					
-					<div class="btn__register">
+					<div class="title" id="title"></div>
 
-						<button class="join">
-							Join us
-						</button>
-
-						<button class="sign">
-							Sign in
-						</button>
-
-					</div>
-
-					<div class="main__register">
-						<input type="text" class="name__inp" placeholder="Name">
-						<input type="text" class="email__inp" placeholder="E-mail">
-						<input type="password" class="pswrd__inp" placeholder="Password">
-						<div class="celeb">
-							If you’re the celebrity, enter the code to create a language
-						</div>
-						<input type="text" class="code__inp" placeholder="Code">
-						<button class="reg__now">Register Now</button>
+					<div class="under__title">
+						Talk to people artificial language
 					</div>
 
 				</div>
-			</div>
-		</div>
-	</header>
 
-	<main>
-		<div class="main__header">
-			<div class="main__title">
-				What is Elinguage?
-			</div>
-			<div class="main__subs">
-				Web platform for communication using different artificial languages. New idea for your and your friends fun. Enjoy yor conversation!
-			</div>
-		</div>
-		
-		<div class="schema">
-			<div class="schema__title">How it works?</div>
+				<div class="right__part">
+					<div class="register" id="register">
+						
+						<div class="btn__register">
 
-				<ul class="schema__list">
+							<button class="join" id="join">
+								Join us
+							</button>
 
-					<li class="punct">
-						<img src="css/img/plus.png" alt="" class="img_1">
-						<div class="title__schema li_punct_1">
-							Start
-						</div>
-						<div class="descr__schema desct_punct_1">
-							Register or sign in
-						</div>
-					</li>
+							<button class="sign" id="sign">
+								Sign in
+							</button>
 
-					<li class="punct">
-						<img src="css/img/translate.png" alt="" class="img_2">
-						<div class="title__schema li_punct_2">
-							Translate
 						</div>
-						<div class="descr__schema desct_punct_2">
-							Write word or expression, choose the language and translate
-						</div>
-					</li>
+							<div class="main__register" id="reg">
+								<input type="text" class="name__inp" placeholder="Name">
+								<input type="text" class="email__inp" placeholder="E-mail">
+								<input type="password" class="pswrd__inp" placeholder="Password">
+								<div class="celeb">
+									If you’re the celebrity, enter the code to create a language
+								</div>
+								<input type="text" class="code__inp" placeholder="Code">
+								<button class="reg__now">Register Now</button>
+							</div>
+						<div class="main__sign" id="log">
 
-					<li class="punct">
-						<img src="css/img/group.png" alt="" class="img_3">
-						<div class="title__schema li_punct_3">
-							Share
-						</div>
-						<div class="descr__schema desct_punct_3">
-							Share the five-letter conversation code with other members, who can use it to join your group.
-						</div>
-					</li>
+							<input type="text" class="email__inp" placeholder="E-mail or login">
+							<input type="password" class="pswrd__inp" placeholder="Password">
 
-					<li class="punct">
-						<img src="css/img/idea.png" alt="" class="img_4">
-						<div class="title__schema li_punct_4">
-							Create
+							<button class="reg__now">Sign in</button>
 						</div>
-						<div class="descr__schema desct_punct_4">
-							Create your own language!
-						</div>
-					</li>
-				</ul>
 
-		</div>
-	</main>
-	<footer>
-		<div class="foot__left">
-			<div class="foot__logo">
-				<div class="top line">
-				<hr class="short">
-				<hr class="long">
-				</div>
-				ELINGUAGE
-				<div class="bot line">
-				<hr class="long">
-				<hr class="short">
+					</div>
 				</div>
 			</div>
-		</div>
+		</header>
 
-		<div class="foot__right">
-			<div class="connect">
-				<hr class="con_hr">
-				Connect with us
-				<hr class="con_hr">
+		<main class="section">
+			<div class="main__header">
+				<div class="main__title">
+					What is Elinguage?
+				</div>
+				<div class="main__subs">
+					Web platform for communication using different artificial languages. New idea for your and your friends fun. Enjoy yor conversation!
+				</div>
 			</div>
-			<div class="email">support@elinguage.com</div>
 			
-		</div>
-	</footer>
+			<div class="schema">
+				<div class="schema__title">How it works?</div>
+
+					<ul class="schema__list">
+
+						<li class="punct">
+							<img src="css/img/plus.png" alt="" class="img_1">
+							<div class="title__schema li_punct_1">
+								Start
+							</div>
+							<div class="descr__schema desct_punct_1">
+								Register or sign in
+							</div>
+						</li>
+
+						<li class="punct">
+							<img src="css/img/translate.png" alt="" class="img_2">
+							<div class="title__schema li_punct_2">
+								Translate
+							</div>
+							<div class="descr__schema desct_punct_2">
+								Write word or expression, choose the language and translate
+							</div>
+						</li>
+
+						<li class="punct">
+							<img src="css/img/group.png" alt="" class="img_3">
+							<div class="title__schema li_punct_3">
+								Share
+							</div>
+							<div class="descr__schema desct_punct_3">
+								Share the five-letter conversation code with other members, who can use it to join your group.
+							</div>
+						</li>
+
+						<li class="punct">
+							<img src="css/img/idea.png" alt="" class="img_4">
+							<div class="title__schema li_punct_4">
+								Create
+							</div>
+							<div class="descr__schema desct_punct_4">
+								Create your own language!
+							</div>
+						</li>
+					</ul>
+
+			</div>
+		</main>
+		<footer class="section">
+			<div class="foot__left">
+				<div class="foot__logo">
+					<div class="top line">
+					<hr class="short">
+					<hr class="long">
+					</div>
+					ELINGUAGE
+					<div class="bot line">
+					<hr class="long">
+					<hr class="short">
+					</div>
+				</div>
+			</div>
+
+			<div class="foot__right">
+				<div class="connect">
+					<hr class="con_hr">
+					Connect with us
+					<hr class="con_hr">
+				</div>
+				<div class="email">support@elinguage.com</div>
+				
+			</div>
+		</footer>
+	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="slider/fullpage.js"></script>
+<script type="text/javascript" src="slider/fullpage.min.js"></script>
 <script type="text/javascript" src="script/script.js">
 </script>
 </body>

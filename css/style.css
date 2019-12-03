@@ -10,60 +10,56 @@ button {
   outline: none; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\000038}}
-body {
-  -webkit-transition: all 2s;
-  transition: all 2s;
-  height: 100%;
-  overflow: hidden; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000311}}
-.slider {
-  -webkit-transition: 2s all;
-  transition: 2s all;
+.sliding {
   position: fixed;
-  width: 5vw;
-  height: 10vh;
-  top: 88vh;
-  left: 47.5vw;
+  border-radius: 20px;
+  border: 2px #2e3e40 solid;
+  width: 1.2vw;
+  height: 5vh;
+  z-index: 1;
+  bottom: 1vh;
+  left: 49.4vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000324}}
-.btn {
-  background: rgba(0, 0, 205, 0.3);
-  border: 2px #40E0D0 solid;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000320}}
+.ball {
+  position: relative;
+  top: .2vh;
+  width: 1vw;
+  height: 1vw;
   border-radius: 50%;
-  height: 2vw;
-  width: 2vw;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  font-size: 1vw;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  text-align: center;
-  padding-bottom: 0.05vw; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000335}}
-  .btn:hover {
-    border: 3px #191970 solid; }
+  background: #c1c7c7;
+  -webkit-animation: sliding 5s infinite;
+          animation: sliding 5s infinite; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000340}}
+@-webkit-keyframes sliding {
+  from {
+    margin-top: 0; }
+  20% {
+    margin-top: 2.6vh; }
+  to {
+    margin-top: 2.6vh; } }
+
+@keyframes sliding {
+  from {
+    margin-top: 0; }
+  20% {
+    margin-top: 2.6vh; }
+  to {
+    margin-top: 2.6vh; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000334}}
 header {
   width: 100vw;
   height: 100vh;
   background: url("img/headback.jpg");
   background-size: cover; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000340}}
 .switchs {
   position: absolute;
   background: transparent;
@@ -82,7 +78,7 @@ header {
       -ms-flex-align: center;
           align-items: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000350}}
 .switch {
   -webkit-transition: .5s all;
   transition: .5s all;
@@ -92,7 +88,7 @@ header {
   width: 3vw;
   height: 1.5vw; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000358}}
 .tgl {
   -webkit-transition: .5s all;
   transition: .5s all;
@@ -103,7 +99,7 @@ header {
   height: 1.1vw;
   background: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000367}}
 .back {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 241, 255, 0.7)), to(rgba(0, 168, 178, 0.7)));
   background-image: linear-gradient(90deg, rgba(0, 241, 255, 0.7) 0%, rgba(0, 168, 178, 0.7) 100%);
@@ -117,7 +113,7 @@ header {
       -ms-flex-direction: row;
           flex-direction: row; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000374}}
 .left__part {
   width: 50vw;
   display: -webkit-box;
@@ -135,7 +131,7 @@ header {
           justify-content: center;
   color: #333333; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000382}}
 .title {
   background: url("img/logo.png");
   background-size: cover;
@@ -146,7 +142,7 @@ header {
   -webkit-transition: all 1s ease;
   transition: all 1s ease; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000391}}
 .under__title {
   font-size: 40px;
   width: 350px;
@@ -154,7 +150,7 @@ header {
   margin: 0 0 16vh 10vw;
   font-weight: 500; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\0000399}}
 .right__part {
   width: 50vw;
   display: -webkit-box;
@@ -167,15 +163,16 @@ header {
       -ms-flex-align: center;
           align-items: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003105}}
 .register {
+  position: relative;
   width: 20vw;
-  height: 45vh;
+  height: 42vh;
   background: #2e3e40; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003112}}
 .btn__register {
-  height: 12.5%;
+  height: 5vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +184,7 @@ header {
       -ms-flex-align: center;
           align-items: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003119}}
 .btn__register button {
   width: 50%;
   height: 100%;
@@ -195,10 +192,15 @@ header {
   -webkit-transition: .5s all;
   transition: .5s all; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003130}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003125}}
 .join {
   background: #2e3e40;
   color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003128}}
+  .join:hover {
+    font-size: 1.3vw;
+    font-weight: 500;
+    border: 2px orange solid; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003134}}
 .sign {
@@ -212,8 +214,10 @@ header {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003144}}
 .main__register {
+  position: absolute;
   width: 100%;
   height: 87.5%;
+  padding-top: 1vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,61 +229,68 @@ header {
       -ms-flex-align: center;
           align-items: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003153}}
 .reg__now {
-  margin: 1vh 0 0 0;
-  width: 90%;
-  height: 3vw;
+  margin: 1.5vh 0 0 0;
+  width: 19vw;
+  height: 4.3vh;
   background: #ff6600;
   color: #333333;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 700;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-transition: .5s all;
   transition: .5s all; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003164}}
   .reg__now:hover {
-    -webkit-transform: scale(1.11, 1.11);
-            transform: scale(1.11, 1.11); }
+    -webkit-transform: scale(1.053, 1.053);
+            transform: scale(1.053, 1.053); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003170}}
-.main__register input {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003169}}
+input {
+  padding-top: 0.3vh;
+  padding-left: 1vw;
   margin: 1.5vh 0 0 0;
   width: 18vw;
-  height: 5vh;
-  padding-top: 0.3vh;
-  padding-left: 1vw; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003176}}
-  .main__register input::-webkit-input-placeholder {
+  height: 4vh; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003175}}
+  input::-webkit-input-placeholder {
     font-size: 20px; }
-  .main__register input:-ms-input-placeholder {
+  input:-ms-input-placeholder {
     font-size: 20px; }
-  .main__register input::-ms-input-placeholder {
+  input::-ms-input-placeholder {
     font-size: 20px; }
-  .main__register input::placeholder {
+  input::placeholder {
     font-size: 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003178}}
 .celeb {
   line-height: 2.5vh;
-  width: 18vw;
+  width: 19vw;
   color: white;
-  font-size: 1vw; }
+  font-size: 1.05vw; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003184}}
 .code__inp {
-  margin: 0 0 0 0 !important; }
+  margin: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003188}}
+.main__sign {
+  position: absolute;
+  width: 100%;
+  height: 87.5%;
+  padding-top: 1vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003198}}
 main {
   width: 100vw;
   height: 100vh;
@@ -296,7 +307,7 @@ main {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003207}}
 .main__header {
   width: 100%;
   height: 50vh;
@@ -314,13 +325,13 @@ main {
           align-items: center;
   margin: 10vh 0 0 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003217}}
 .main__title {
   color: #00a8b2;
   font-size: 3vw;
   font-weight: 700; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003223}}
 .main__subs {
   width: 50vw;
   font-size: 1.2vw;
@@ -328,8 +339,9 @@ main {
   text-align: left;
   margin-bottom: 10vh; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003231}}
 .schema {
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,15 +356,14 @@ main {
       -ms-flex-pack: center;
           justify-content: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003228}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003238}}
 .schema__title {
   color: #00a8b2;
   font-size: 3em;
   font-weight: 700; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003245}}
 .schema__list {
-  height: 50vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,7 +378,7 @@ main {
       -ms-flex-align: center;
           align-items: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003244}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003253}}
 .title__schema {
   color: #00a8b2;
   width: 20vw;
@@ -375,12 +386,12 @@ main {
   font-weight: 500;
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003251}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003260}}
 .descr__schema {
   width: 20vw;
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003264}}
 .punct {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,16 +407,16 @@ main {
       -ms-flex-pack: center;
           justify-content: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003261}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003270}}
 img {
   width: 4vw;
   height: 4vw; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003264}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003273}}
 li {
   list-style-type: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003269}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003278}}
 footer {
   width: 100vw;
   height: 100vh;
@@ -414,10 +425,10 @@ footer {
   display: -ms-flexbox;
   display: flex; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003277}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003287}}
 .foot__left {
-  width: 50%;
-  height: 100%;
+  width: 50vw;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,14 +439,14 @@ footer {
       -ms-flex-align: center;
           align-items: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003285}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003295}}
 .foot__logo {
   color: white;
   font-size: 6vw;
   font-weight: 300;
   position: relative; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003291}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003301}}
 .line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,24 +459,24 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003297}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003307}}
 hr {
   height: 1vh;
   background: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003302}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003312}}
 .top {
   margin-bottom: -1vh; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003305}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003315}}
 .bot {
   margin-top: -2vh; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003308}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003318}}
 .long {
   width: 60%;
   position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003321}}
   .long:before {
     position: absolute;
     top: -0.5vh;
@@ -475,7 +486,7 @@ hr {
     border-left: 3vh solid white;
     width: 0;
     height: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003331}}
   .long:after {
     position: absolute;
     top: -0.5vh;
@@ -487,11 +498,11 @@ hr {
     width: 0;
     height: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003345}}
 .short {
   width: 25%;
   position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003348}}
   .short:before {
     position: absolute;
     top: -0.5vh;
@@ -501,7 +512,7 @@ hr {
     border-left: 3vh solid white;
     width: 0;
     height: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003358}}
   .short:after {
     position: absolute;
     top: -0.5vh;
@@ -513,8 +524,11 @@ hr {
     width: 0;
     height: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003371}}
 .foot__right {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 50vw;
   height: 100vh;
   display: -webkit-box;
@@ -531,7 +545,7 @@ hr {
       -ms-flex-align: center;
           align-items: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003383}}
 .connect {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,12 +561,12 @@ hr {
   font-size: 1.5vw;
   color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003394}}
 .con_hr {
   width: 15%;
   height: 0.5vh;
   position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003398}}
   .con_hr:before {
     position: absolute;
     top: -0.25vh;
@@ -562,7 +576,7 @@ hr {
     border-left: 1.5vh solid white;
     width: 0;
     height: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003408}}
   .con_hr:after {
     position: absolute;
     top: -0.25vh;
@@ -574,9 +588,853 @@ hr {
     width: 0;
     height: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003408}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/style\.scss}line{font-family:\00003421}}
 .email {
   font-size: 1vw;
   color: white; }
+
+@media screen and (max-width: 1500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\000031}}
+  .sliding {
+    position: fixed;
+    border-radius: 20px;
+    border: 2px #2e3e40 solid;
+    width: 2.5vw;
+    height: 5vh;
+    z-index: 1;
+    bottom: 1vh;
+    left: 48.75vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000313}}
+  .ball {
+    position: relative;
+    top: .2vh;
+    width: 2.2vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    background: #c1c7c7;
+    -webkit-animation: sliding 5s infinite;
+            animation: sliding 5s infinite; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000323}}
+  .switchs {
+    position: absolute;
+    background: transparent;
+    width: 6vw;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000333}}
+  .switch {
+    -webkit-transition: .5s all;
+    transition: .5s all;
+    background: #696969;
+    position: relative;
+    border-radius: 1.5vw;
+    width: 5vw;
+    height: 2.5vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000341}}
+  .tgl {
+    -webkit-transition: .5s all;
+    transition: .5s all;
+    position: relative;
+    left: 0.15vw;
+    border-radius: 50%;
+    width: 1.8vw;
+    height: 1.8vw;
+    background: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000353}}
+  .right__part {
+    width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000359}}
+  .register {
+    position: relative;
+    width: 30vw;
+    height: 42vh;
+    background: #2e3e40; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000366}}
+  .btn__register {
+    height: 5vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000373}}
+  .btn__register button {
+    width: 50%;
+    height: 100%;
+    font-size: 2.2vw;
+    -webkit-transition: .5s all;
+    transition: .5s all; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000379}}
+  .join {
+    background: #2e3e40;
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000382}}
+    .join:hover {
+      font-size: 1.3vw;
+      font-weight: 500;
+      border: 2px orange solid; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000388}}
+  .sign {
+    background: #c1c7c7;
+    color: #333333; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000391}}
+    .sign:hover {
+      font-size: 1.3vw;
+      font-weight: 500;
+      border: 2px orange solid; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\0000398}}
+  .main__register {
+    position: absolute;
+    width: 100%;
+    height: 87.5%;
+    padding-top: 1vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003107}}
+  .reg__now {
+    margin: 1.5vh 0 0 0;
+    width: 29vw;
+    height: 4.3vh;
+    background: #ff6600;
+    color: #333333;
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+    -webkit-transition: .5s all;
+    transition: .5s all; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003118}}
+    .reg__now:hover {
+      -webkit-transform: scale(1.053, 1.053);
+              transform: scale(1.053, 1.053); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003123}}
+  input {
+    padding-top: 0.3vh;
+    padding-left: 1vw;
+    margin: 1.5vh 0 0 0;
+    width: 28vw;
+    height: 4vh; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003129}}
+    input::-webkit-input-placeholder {
+      font-size: 20px; }
+    input:-ms-input-placeholder {
+      font-size: 20px; }
+    input::-ms-input-placeholder {
+      font-size: 20px; }
+    input::placeholder {
+      font-size: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003132}}
+  .celeb {
+    line-height: 3vh;
+    width: 29vw;
+    color: white;
+    font-size: 1.7vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003138}}
+  .code__inp {
+    margin: 0 !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003142}}
+  .main__sign {
+    position: absolute;
+    width: 100%;
+    height: 87.5%;
+    padding-top: 1vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0;
+    display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003153}}
+  main {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003162}}
+  .main__header {
+    width: 100%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10vh 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003172}}
+  .main__title {
+    color: #00a8b2;
+    font-size: 5vw;
+    font-weight: 700; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003178}}
+  .main__subs {
+    width: 50vw;
+    font-size: 2vw;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 10vh; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003186}}
+  .schema {
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003193}}
+  .schema__title {
+    color: #00a8b2;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0 0 5vh 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003201}}
+  .schema__list {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003209}}
+  .title__schema {
+    color: #00a8b2;
+    width: 20vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003216}}
+  .descr__schema {
+    width: 20vw;
+    text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003220}}
+  .punct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 10vh 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003227}}
+  img {
+    width: 4vw;
+    height: 4vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003230}}
+  li {
+    list-style-type: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003234}}
+  footer {
+    width: 100vw;
+    height: 100vh;
+    background: #333333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003242}}
+  .foot__left {
+    width: 100vw;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003249}}
+  .foot__right {
+    position: static;
+    width: 100vw;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003259}}
+  .connect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 25vw;
+    height: 10vh;
+    font-weight: 500;
+    font-size: 2.5vw;
+    color: white;
+    margin: 0 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003272}}
+  .email {
+    font-size: 2vw;
+    color: white;
+    margin: 0 0 35vh 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_10001500\.scss}line{font-family:\00003278}}
+  .foot__logo {
+    color: white;
+    font-size: 6vw;
+    font-weight: 300;
+    position: relative;
+    margin: 20vh 0 0 0; } }
+@media screen and (max-width: 1000px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\000031}}
+  .sliding {
+    position: fixed;
+    border-radius: 20px;
+    border: 2px #2e3e40 solid;
+    width: 2.5vw;
+    height: 5vh;
+    z-index: 1;
+    bottom: 1vh;
+    left: 48.75vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000313}}
+  .ball {
+    position: relative;
+    top: .2vh;
+    width: 2.2vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    background: #c1c7c7;
+    -webkit-animation: sliding 5s infinite;
+            animation: sliding 5s infinite; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000323}}
+  .switchs {
+    position: absolute;
+    background: transparent;
+    width: 6vw;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000333}}
+  .switch {
+    -webkit-transition: .5s all;
+    transition: .5s all;
+    background: #696969;
+    position: relative;
+    border-radius: 1.5vw;
+    width: 5vw;
+    height: 2.5vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000341}}
+  .tgl {
+    -webkit-transition: .5s all;
+    transition: .5s all;
+    position: relative;
+    left: 0.15vw;
+    border-radius: 50%;
+    width: 1.8vw;
+    height: 1.8vw;
+    background: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000353}}
+  .back {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000358}}
+  .left__part {
+    height: 50vh;
+    width: 100vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000362}}
+  .right__part {
+    height: 50vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000369}}
+  .title {
+    margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000372}}
+  .under__title {
+    margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000375}}
+  .register {
+    position: relative;
+    width: 50vw;
+    height: 42vh;
+    background: #2e3e40;
+    margin-bottom: 15vh; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000383}}
+  .btn__register {
+    height: 5vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000390}}
+  .btn__register button {
+    width: 50%;
+    height: 100%;
+    font-size: 3vw;
+    -webkit-transition: .5s all;
+    transition: .5s all; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000396}}
+  .join {
+    background: #2e3e40;
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\0000399}}
+    .join:hover {
+      font-size: 3.2vw;
+      font-weight: 500;
+      border: 2px orange solid; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003105}}
+  .sign {
+    background: #c1c7c7;
+    color: #333333; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003108}}
+    .sign:hover {
+      font-size: 3.2vw;
+      font-weight: 500;
+      border: 2px orange solid; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003115}}
+  .main__register {
+    position: absolute;
+    width: 100%;
+    height: 87.5%;
+    padding-top: 1vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003124}}
+  .reg__now {
+    margin: 1.5vh 0 0 0;
+    width: 90%;
+    height: 4.3vh;
+    background: #ff6600;
+    color: #333333;
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+    -webkit-transition: .5s all;
+    transition: .5s all; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003135}}
+    .reg__now:hover {
+      -webkit-transform: scale(1.053, 1.053);
+              transform: scale(1.053, 1.053); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003140}}
+  input {
+    padding-top: 0.3vh;
+    padding-left: 1vw;
+    margin: 1.5vh 0 0 0;
+    width: 90%;
+    height: 4vh; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003146}}
+    input::-webkit-input-placeholder {
+      font-size: 20px; }
+    input:-ms-input-placeholder {
+      font-size: 20px; }
+    input::-ms-input-placeholder {
+      font-size: 20px; }
+    input::placeholder {
+      font-size: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003149}}
+  .celeb {
+    line-height: 3vh;
+    width: 90%;
+    color: white;
+    font-size: 2.6vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003155}}
+  .code__inp {
+    margin: 0 !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003159}}
+  .main__sign {
+    position: absolute;
+    width: 100%;
+    height: 87.5%;
+    padding-top: 1vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0;
+    display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003170}}
+  main {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003179}}
+  .main__header {
+    width: 100%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10vh 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003189}}
+  .main__title {
+    color: #00a8b2;
+    font-size: 5vw;
+    font-weight: 700; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003195}}
+  .main__subs {
+    width: 50vw;
+    font-size: 2vw;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 10vh; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003203}}
+  .schema {
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003210}}
+  .schema__title {
+    color: #00a8b2;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0 0 5vh 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003218}}
+  .schema__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003223}}
+  .title__schema {
+    color: #00a8b2;
+    width: 20vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003230}}
+  .descr__schema {
+    width: 20vw;
+    text-align: center;
+    font-size: 2.5vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003235}}
+  .punct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003241}}
+  img {
+    width: 4vw;
+    height: 4vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003244}}
+  li {
+    list-style-type: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003248}}
+  footer {
+    width: 100vw;
+    height: 100vh;
+    background: #333333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003256}}
+  .foot__left {
+    width: 100vw;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003263}}
+  .foot__right {
+    position: static;
+    width: 100vw;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003273}}
+  .connect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 25vw;
+    height: 10vh;
+    font-weight: 500;
+    font-size: 2.5vw;
+    color: white;
+    margin: 0 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003286}}
+  .email {
+    font-size: 2vw;
+    color: white;
+    margin: 0 0 35vh 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/argen\/Desktop\/slidersite\/css\/_01000\.scss}line{font-family:\00003292}}
+  .foot__logo {
+    color: white;
+    font-size: 6vw;
+    font-weight: 300;
+    position: relative;
+    margin: 20vh 0 0 0; } }
 
 /*# sourceMappingURL=style.css.map */
